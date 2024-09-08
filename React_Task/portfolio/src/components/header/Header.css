@@ -1,0 +1,19 @@
+.header {
+    background-image: url('/public/back.avif');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 500px;
+    width: 100%;
+    
+    
+}
+
+.text {
+    padding-left: 15%;
+    padding-top: 10%;
+    color: white;
+}
+
+.text ,h2{
+    padding-right: 40%;
+}

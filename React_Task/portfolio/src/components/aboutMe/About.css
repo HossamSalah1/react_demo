@@ -1,0 +1,22 @@
+.about-section {
+    display: flex;
+    background-color: aliceblue;
+    height: 300px;
+    align-items: center; /* Vertically centers the h1 and p */
+    
+}
+.title{
+    padding-left: 10%;
+    padding-bottom:60px ;
+}
+
+
+.description {
+    max-width: 600px; /* Set a max-width to force the paragraph to wrap */
+    /* word-wrap:normal; Ensure long words break to the next line if necessary */
+    padding-left: 10%;
+    font-size: larger;
+}
+
+
+
