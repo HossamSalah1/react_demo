@@ -41,7 +41,7 @@ function Movie() {
                         </Card.Body>
 
                         <button className="btn btn-primary" onClick={() => {
-                            navigate(`/moviDetals/${movi.id}`)
+                            navigate(`/movieDetails/${movi.id}`)
                         }}> details</button>
                     </Card>
                 </Col>

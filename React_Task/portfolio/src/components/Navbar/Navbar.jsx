@@ -19,9 +19,10 @@ export default class Navbar2 extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/About">About</Nav.Link>
-                            
+                            <Nav.Link href="/About">About</Nav.Link>  
                             <Nav.Link href="/movies">Movies</Nav.Link>
+                            <Nav.Link href="/form">Form</Nav.Link>
+
 
                         </Nav>
                     </Navbar.Collapse>
