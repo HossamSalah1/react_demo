@@ -1,27 +1,31 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './pages/home/Home'
+import AboutMe from './pages/aboutMe/AboutMe'
+import ContactUs from './pages/contactUs/contactUs'
+import Products from './pages/products/Products'
+import Navbar from './components/Navbar/Navbar'
+import NotFound from './pages/notFound/notFound'
+import Movie from './pages/Movie/Movie'
+import MoviDetals from './pages/Movie/moviDetals'
 
-import Header from './components/header/Header'
-import About from './components/aboutMe/AboutMe'
-import Skills from './components/skills/Skills'
-import Foot from './components/footer/Footer'
-import Navbar2 from './components/Navbar/Navbar'
-import Users from './components/Users/Users'
-import UsersFunction from './components/Users/UsersFunction'
-import Form from './components/Form/Form'
 function App() {
 
-
   return (
-
     <>
-      <Navbar2></Navbar2>
-      
-      <Form></Form>
-      {/* <UsersFunction></UsersFunction> */}
-      
-      {/* <Users></Users> */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home></Home>} />
+          <Route path='/about' element={<AboutMe></AboutMe>} />
+          <Route path='/contact' element={<ContactUs></ContactUs>} />
+          <Route path='/products' element={<Products></Products>} />
+          <Route path='/movieDetails/:id' element={<MoviDetals></MoviDetals>} />
+          <Route path='/movies' element={<Movie></Movie>} />
+          <Route path='*' element={<NotFound/>} />
 
-
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
